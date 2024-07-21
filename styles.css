@@ -40,7 +40,6 @@ body {
   max-width: 1440px;
   margin: 0 auto;
   padding: 20px;
-  text-align: center;
 }
 
 .header {
@@ -67,6 +66,7 @@ h1 {
   font-size: 36px;
   font-weight: var(--font-weight-bold);
   margin-bottom: 20px;
+  color: var(--soft-red);
 }
 
 p {
@@ -76,24 +76,23 @@ p {
 
 .email-form {
   display: flex;
-  flex-direction: column;
-  align-items: flex-start;
+  flex-direction: row;
+  align-items: center;
+  border: 1px solid var(--desaturated-red);
+  border-radius: 25px;
+  overflow: hidden;
 }
 
 .email-form input {
   padding: 10px 20px;
-  border: 2px solid var(--desaturated-red);
-  border-radius: 50px;
+  border: none;
   font-size: 18px;
-  width: 100%;
-  max-width: 400px;
-  margin-bottom: 10px;
+  flex-grow: 1;
 }
 
 .email-form button {
   padding: 10px 30px;
   border: none;
-  border-radius: 50px;
   background-color: var(--soft-red);
   color: #fff;
   font-size: 18px;
@@ -127,17 +126,15 @@ p {
 
   .content {
     text-align: left;
+    max-width: 50%;
   }
 
   .image {
     order: 2;
+    max-width: 50%;
   }
 
   .image img {
-    max-width: 600px;
-  }
-
-  .email-form {
-    align-items: flex-start;
+    max-width: 100%;
   }
 }
