@@ -31,10 +31,7 @@ body {
   font-family: var(--font-family);
   font-size: var(--body-font-size);
   color: var(--dark-grayish-red);
-  background: var(--gradient-1);
-  background-image: url('./images/bg-pattern-desktop.svg');
-  background-repeat: no-repeat;
-  background-position: top right;
+  background: var(--gradient-1), url('images/bg-pattern-desktop.svg') no-repeat center center fixed;
   background-size: cover;
   margin: 0;
   padding: 0;
