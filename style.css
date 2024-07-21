@@ -1,0 +1,129 @@
+/* Importing the Josefin Sans font from Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600&display=swap');
+
+:root {
+  /* Primary Colors */
+  --desaturated-red: hsl(0, 36%, 70%);
+  --soft-red: hsl(0, 93%, 68%);
+
+  /* Neutral Colors */
+  --dark-grayish-red: hsl(0, 6%, 24%);
+
+  /* Gradients */
+  --gradient-1: linear-gradient(135deg, hsl(0, 0%, 100%), hsl(0, 100%, 98%));
+  --gradient-2: linear-gradient(135deg, hsl(0, 80%, 86%), hsl(0, 74%, 74%));
+
+  /* Typography */
+  --body-font-size: 16px;
+  --font-family: 'Josefin Sans', sans-serif;
+  --font-weight-light: 300;
+  --font-weight-regular: 400;
+  --font-weight-bold: 600;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: var(--font-family);
+  font-size: var(--body-font-size);
+  color: var(--dark-grayish-red);
+  background: var(--gradient-1);
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 20px;
+  text-align: center;
+}
+
+.header {
+  margin-bottom: 50px;
+}
+
+.logo {
+  width: 150px;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.content {
+  max-width: 600px;
+  margin-bottom: 50px;
+}
+
+h1 {
+  font-size: 36px;
+  font-weight: var(--font-weight-bold);
+  margin-bottom: 20px;
+}
+
+p {
+  font-size: 16px;
+  font-weight: var(--font-weight-light);
+  margin-bottom: 30px;
+}
+
+.email-form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.email-form input {
+  padding: 10px;
+  border: 1px solid var(--desaturated-red);
+  border-radius: 5px 0 0 5px;
+  flex: 1;
+  max-width: 400px;
+}
+
+.email-form button {
+  padding: 10px 20px;
+  background-color: var(--soft-red);
+  color: white;
+  border: none;
+  border-radius: 0 5px 5px 0;
+  cursor: pointer;
+}
+
+.image {
+  max-width: 600px;
+}
+
+.image img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+@media (min-width: 768px) {
+  main {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .content {
+    text-align: left;
+  }
+
+  .email-form {
+    justify-content: flex-start;
+  }
+}
+
+@media (max-width: 375px) {
+  body {
+    padding: 20px;
+  }
+}
